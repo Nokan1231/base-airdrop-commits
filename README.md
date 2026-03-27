@@ -36,3 +36,28 @@ A lightweight command-line task management application built with Node.js.
               - ## License
              
               - MIT
+
+
+## Base Blockchain Integration
+
+TaskFlow is being developed with Base blockchain support in mind.
+
+### Base Ecosystem
+- Part of the Base developer community
+- - Contributing to Base ecosystem growth
+  - - Planning on-chain task rewards using Base network
+   
+    - ### Getting Started with Base
+    - ```bash
+      # Future: Deploy TaskFlow contracts on Base
+      # Chain ID: 8453
+      # RPC: https://mainnet.base.org
+      ```
+
+      ## Contributing
+
+      Contributions are welcome! Please follow the guidelines in CONTRIBUTING.md.
+
+      ## Author
+
+      **Nokan1231** - Base Developer Community
