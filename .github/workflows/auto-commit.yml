@@ -14,14 +14,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Make 10 commits
+      - name: Make 50 commits
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          for i in $(seq 1 10); do
+          for i in $(seq 1 50); do
             echo "Auto commit $i at $(date)" >> activity.log
             git add activity.log
             git commit -m "Auto commit batch: $(date '+%Y-%m-%d %H:%M:%S') - $i"
-            sleep 1
           done
           git push
