@@ -1,0 +1,24 @@
+name: Auto Commit
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Make commit
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          echo "Auto commit at $(date)" >> activity.log
+          git add activity.log
+          git commit -m "Auto commit: $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
