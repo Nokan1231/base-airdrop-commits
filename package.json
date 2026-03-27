@@ -1,0 +1,16 @@
+{
+    "name": "taskflow",
+    "version": "1.0.0",
+    "description": "Simple Todo CLI Application",
+    "main": "app.js",
+    "scripts": {
+          "start": "node app.js",
+          "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": ["todo", "cli", "task", "management"],
+    "author": "Nokan1231",
+    "license": "MIT",
+    "engines": {
+          "node": ">=14.0.0"
+    }
+}
