@@ -1,0 +1,23 @@
+bot:
+  poll_interval_s: 15
+  position_size_usdc: 10.0
+  max_open_positions: 3
+
+arb:
+  fee_rate: 0.02
+  slippage: 0.005
+  min_edge: 0.005
+  min_liquidity_usdc: 5.0
+
+risk:
+  max_daily_loss_usdc: 50.0
+  circuit_breaker_consecutive_losses: 5
+  max_position_usdc: 100.0
+
+paper:
+  virtual_balance_usdc: 1000.0
+  duration_minutes: 60
+
+logging:
+  level: INFO
+  format: "%(asctime)s %(levelname)s %(message)s"

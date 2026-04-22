@@ -6,3 +6,14 @@ node_modules/
 .idea/
 dist/
 build/
+
+# Bot runtime data (snapshots, reports)
+polymarket-btc-5m-arb-bot/data/*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
